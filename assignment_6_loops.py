@@ -20,5 +20,17 @@ for name in names_list:
     
 
 # %% Assignment 2 - Create a loop that prints the name of the day for the following 10 days
+from datetime import date, timedelta
+import locale
+
+# in het nederlands
+locale.setlocale(locale.LC_ALL, locale="nl_NL")
+
+current_date = date.today()
 
 
+for num_day in range(1, 11):
+    next_date = current_date + timedelta(days=num_day)
+    next_date_day = next_date.strftime("%A")
+    print(next_date_day)
+# %%
