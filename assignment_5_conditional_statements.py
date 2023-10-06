@@ -50,4 +50,26 @@ else:
     print(f"{name} -> {new_name}")
 
 
-#%% Assignment 3. -
+#%% Assignment 3. - Create a conditional statement that indicates if your age is between 18 and 68.
+
+age = 34
+
+
+if 18 < age < 68:
+    print("You are between 18 and 68")
+else:
+    print("You are not") 
+
+# %%
+if age > 18 and age < 68:
+    print("You are between 18 and 68")
+else:
+    print("You are not") 
+
+
+# %%
+if age in range(18, 69):
+    print("You are between 18 and 68")
+else:
+    print("You are not") 
+# %%
