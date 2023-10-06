@@ -1,6 +1,7 @@
 import requests
 import sys
 import os
+import pandas as pd
 
 # specify the brand
 selected_brand = input("🚗 Insert a brand:\n")
@@ -39,6 +40,15 @@ if selected_brand_upper not in files_folders:
     print(f"📂 Creating folder '{selected_brand_upper}'")
     os.mkdir(selected_brand_upper)
 
+# convert the list to a pandas DataFrame
+data_df = pd.DataFrame(data)
 
 
+# specify the filename
+file_name = f"{selected_brand_upper}/export_{selected_brand.lower()}.csv"
+
+# export the DataFrame to csv in the right folder
+print(f"Exporting file... {file_name}")
+data_df.to_csv(file_name, sep=";", index=False)
+print(f"✅ Succesfully exported file... {file_name}")
 pass
