@@ -25,12 +25,10 @@ difference = (birthday_this_year - current_date)
 difference_days = difference.days
 
 # check if it is negative
-if difference_days > 0:
-    difference_days
+if difference_days > 0:   
     print(f"🎁 Your birthday is in {difference_days} days.")
 else:
     difference_days
     difference = (current_date - birthday_this_year)
     difference_days = difference.days
-    print(f"🎁 Your birthday is in {difference_days} days)
-pass
+    print(f"🎁 Your birthday is in {difference_days} days")

@@ -39,6 +39,10 @@ family_dict['members'] = [person_1, person_2, person_3, person_4]
 #%%
 family_dict
 
+#%%
+if "Jimmy" in family_dict['members']:
+    print("There are members")
+
 
 
 

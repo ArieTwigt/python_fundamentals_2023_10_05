@@ -51,4 +51,15 @@ my_car["options"] = ['airco', 'abs', 'airbags', 'autopilot']
 my_car
 # %%
 [x for x in my_car["options"] if "b" in x]
+
+
+# %%
+my_car
+
+
+# %%
+len(my_car['options'])
+
+# %%
+key_types = [type(my_car[x]) for x in my_car.keys()]
 # %%
